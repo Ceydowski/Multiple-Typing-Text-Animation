@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="design.css">
+    <!--<title>Typing Text Animation</title>-->
+</head>
+<body>
+    <div class="container">
+        <span class="text first-text">Ben </span>
+        <span class="text sec-text">Ceyda ÜÇDİRHEM'im.</span>
+    </div>
+
+    <script>
+        const text = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Ceyda ÜÇDİRHEM'im.";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Yazılımcıyım";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "Girişimciyim";
+            }, 8000); //1s = 1000 milliseconds
+            setTimeout(() => {
+                text.textContent = "Araştırmacıyım";
+            }, 12000);
+            setTimeout(() => {
+                text.textContent = "TÜRKÜM";
+            }, 16000);
+        }
+
+        textLoad();
+        setInterval(textLoad, 20000);
+    </script>    
+</body>
+</html>
